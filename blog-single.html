@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Folio - Blog Singlee</title>
+  <title>Webscraping with Selenium IDE</title>
   <meta content="" name="keywords">
   <meta content="" name="description">
 
@@ -31,8 +31,8 @@
   <!-- Responsive css -->
   <link href="css/responsive.css" rel="stylesheet">
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="images/favicon.png">
+  <!-- My Icon -->
+  <link rel="shortcut icon" href="images/logo.jpg">
 
   <!-- =======================================================
     Theme Name: Folio
@@ -50,7 +50,7 @@
       <div class="container">
 
         <div class="logo">
-          <a href="index.html"><img src="images/faux_logo.jpg" alt="logo"></a>
+          <a href="index.html"><img src="images/logo.jpg" alt="logo">Jeremy Opacich</a>
         </div>
 
         <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
@@ -70,33 +70,166 @@
   <div class="main-content paddsection">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-12 col-md-offset-2">
           <div class="row">
             <div class="container-main single-main">
-              <div class="col-md-12">
+              <div class="col-md-16">
                 <div class="block-main mb-30">
-                  <img src="images/web_photo.jpeg" class="img-responsive" alt="reviews2">
+                  <img src="images/web_photo.jpeg" class="img-responsive" alt="reviews2" height=1000>
                   <div class="content-main single-post padDiv">
                     <div class="journal-txt">
-                      <h4><a href="#">Web Scraping with Selenium IDE</a></h4>
+                      <h3><a href="#">Web Scraping with Selenium IDE</a></h3>
                     </div>
                     <div class="post-meta">
                       <ul class="list-unstyled mb-0">
                         <li class="author">by:<a href="#">Jeremy Opacich</a></li>
                         <li class="date">date:<a href="#">August 15, 2019</a></li>
-                        <li class="commont"><i class="ion-ios-heart-outline"></i><a href="#">3 Comments</a></li>
+                        <li class="commont"><i class="ion-ios-heart-outline"></i><a href="#"></a></li>
                       </ul>
                     </div>
-                    <p class="mb-30">We have all been there, digging through HTML with blood shot eyes, searching for the perfect path to gather all the text you desire. You believe you found success, and then, an error occurs and JavaScript is the cause. For you, Selenium is here to help.
+                    <p class="mb-30">
+                      We have all been there, digging through HTML with blood shot eyes, searching for the perfect path to gather all the text you desire. You believe you found success, and then, an error occurs and JavaScript is the cause. For you, Selenium is here to help.
                       <br>
-                     In this blog, we’ll cover:<br><br>
-                    - The Selenium WebDriver and IDE (for Python).<br>
-                    - How they can be used to simplify your web scraping efforts to overcome common obstacles that Beautiful Soup cannot.<br>
-                    - How to get started with the IDE and utilize its features.<br>
-                    - How to navigate the code, select better element tags, and gather your data.</p>
-                    <p class="mb-30">NEED TO FINISH BLOG EXPORT</p>
-                    <blockquote>PULL A BLOCK QUOTE</blockquote>
-                    <p class="mb-30">NEED TO FINISH BLOG EXPORT</p>
+                      In this blog, we’ll cover:<br><br>
+                      - The Selenium WebDriver and IDE (for Python).<br>
+                      - How they can be used to simplify your web scraping efforts to overcome common obstacles that Beautiful Soup cannot.<br>
+                      - How to get started with the IDE and utilize its features.<br>
+                      - How to navigate the code, select better element tags, and gather your data.</p>
+                    <h4 class="mb-30">What is Selenium?</h4>
+                    <p class="mb-30">
+                      Although Selenium is incredibly helpful with web scraping, this is not its explicit purpose; it’s actually a framework for testing web applications. It accomplishes this through two components, WebDriver and Selenium IDE.<br><br>
+
+                      <b>The WebDriver</b> accepts commands via programming code (in a variety of languages) and launches this code in your default web browser. Once the browser is launched, WebDriver will automate the commands, based on the scripted code, and simulate all possible user interactions with the page, including scrolling, clicking, and typing.<br><br>
+
+                      <b>The Selenium IDE</b> (integrated development environment) is a browser extension for Firefox and Chrome that allows you to record your interactions with a web page and edit those interactions to further customize your test. Via Selenium’s API, you can actually export the underlying code to a Python script, which can later be used in your Jupyter Notebook or text editor of choice.<br><br>
+                    </p>
+
+                    <!--<blockquote>PULL A BLOCK QUOTE</blockquote>-->
+
+                    <h4 class="mb-30">How Selenium Helps with Web Scraping</h4>
+                    <p class="mb-30">
+                      As websites get more complex, simple scraping techniques and libraries (such as Beautiful Soup) might run into the following obstacles:<br><br>
+
+                      - <b>Java Script or CSS</b> that obscure or transform the elements.<br>
+                      - <b>Username and password authentication</b> requirements that hide data on a web page fulfilled.<br><br>
+
+                      This is where the Selenium IDE shines. As it mimics a user and interacts with the front facing elements of a web page, it can easily identify the necessary Java Script or CSS code and provide the proper path to get you what you need. If a login pop-up box arrives, Selenium IDE can type in your credentials and move the process along.<br><br>
+
+                      The IDE can even assist you on your easier scraping tasks, by providing you the tags to any location you click on a page. Notice how tags is plural there? The IDE will give you a list of all possible tags for that link, providing you with multiple angles to attack your web scraping task.
+                    </p>
+                    <h4 class="mb-30">Getting Started with the IDE</h4>
+                    <p class="mb-30">
+                        Coders of any skill level can get Selenium up and running, by simply starting with the IDE!<br><br>
+
+                        To use the IDE, you will need the extension with either Chrome or Firefox.<br><br>
+
+                      <img src="images/selenium_blog/chrome_ide.png" width=700 height=250 alt="chrome_ide" align="center">
+                      <img src="images/selenium_blog/firefox_ide.png" class="img-responsive" width=700 height=250 alt="firefox_ide">
+                      <br><br>
+
+                      Once you have the extension, open the IDE and select “Record a new test in a new project.”
+
+                      <br><br>
+                      <img src="images/selenium_blog/selenium_start.png" class="img-responsive" width=700 height=250 alt="selenium_start">
+                      <br><br>
+
+                      Select a base URL for your project, in the next pop-up, and click “start recording.” This will open a new web browser and the IDE, which will track all of your actions. Click, scroll, type, and interact with the webpage in the manner that you choose. <b>Note: it is beneficial that you click on the elements you want to scrape.</b> We will cover this in depth later. When finished, click on the stop button in the IDE, in the upper right hand corner, and you are done.<br><br>
+                      </p>
+                    <h4 class="mb-30">Selenium IDE Features</h4>
+                    <p class="mb-30">
+                      When you are finished your output should look something like this:<br><br>
+
+                      <img src="images/selenium_blog/ide_features.png" class="img-responsive" width=1000 height=500 alt="ide_features">
+                      <br><br>
+
+                      The elements displayed on the IDE are as follows:<br><br>
+
+                      1) <b>Playback and test execution icons.</b> Slowing down the test execution speed can help you identify what some of the commands actually do and also prevent an error from the test execution moving quicker than your browser.
+                      <br>
+                      2) <b>The base url you selected for your project.</b> You can change this as you desire. All values used will be stored in the drop down menu.
+                      <br>
+                      3) <b>Command list.</b> This specifies the type of action being done in the browser, in order of operation. You will get errors here if the action cannot be done in a certain amount of time. If this happens, try slowing down your test speed.
+                      <br>
+                      4) <b>Target list.</b> These are the targets of the command line and many will be the paths that you will use in your scraping. This is incredibly helpful, but we’ll cover this benefit later.
+                      <br>
+                      5) <b>Values.</b> These are any input values entered into the browser. In this case, I have entered an e-mail address and a password.
+                      <br>
+                      6) <b>Record and pause buttons.</b> These are your buttons you can use to restart your recording and pause, when necessary. When recording is live, Stop replaces the Record button.
+                      <br>
+                      7) <b>Add new test button.</b> If you have a separate test (another website or page) that you would like to record, this can be added here.
+                      <br>
+                      8) <b>Test edit button.</b> There are basic features here (e.g. rename), but this button is important for one reason, to export the code of the test. When this option is selected, you can simply select the language (Python in our case) and save it to your project folder. When you open the file you get a fully functioning Python script.
+                      <br><br>
+                      <img src="images/selenium_blog/import_code.png" class="img-responsive" width=600 height=600 alt="import_code">
+                      <br><br>
+
+                    <h4 class="mb-30">Launching the Webdriver</h4>
+                    <p class="mb-30">
+                      We now have code that, if run, will open a browser and execute the commands you laid out in the IDE. In this section, we’ll cover how to use the IDE code output, making adjustments with the help of the IDE, to scrape the data that you want.<br><br>
+
+                      <img src="images/selenium_blog/webdriver.png" class="img-responsive" width=300 height=100 alt="webdriver"><br><br>
+
+                      A major component here, something that most blogs and tutorials on Selenium will address, is the WebDriver (pictured here). This is the engine that makes this work. The WebDriver, if you’re writing this code from scratch, must be imported and assigned with your browser of choice.<br><br>
+                    </p>
+
+                    <h4 class="mb-30">Selecting Targets: How to Find Better Tags</h4>
+                    <p class="md-30">
+                      Earlier, I mentioned that it is beneficial to click on the elements that you want to scrape. If done, you will now be able to leverage another section of the IDE to identify various paths to locate the link or text you desire.<br><br>
+
+                      <img src="images/selenium_blog/target_tags.png" class="img-responsive" width=800 height=400 alt="target_tags"><br><br>
+
+                      Notice the first Target provided by the IDE. If I wanted to loop through a series of links, the ‘linkText’ option would present some challenges. However, using the paths attached to CSS or XPath, we can easily locate numbers to be looped through, in this case allowing me to loop through different web pages.<br><br>
+
+                      <img src="images/selenium_blog/find_element.png" class="img-responsive" width=800 height=100 alt="find_element"><br><br>
+
+                      For virtually all the Targets in the IDE, you will have the ability to make adjustments or find the proper tag to apply to your code.<br><br>
+ 
+                    </p>
+
+                    <h4 class="mb-30">Navigating Your Code</h4>
+                    <p class="md-30">
+                      As you read over the generated code, you will notice several different methods. These methods serve varying purposes and may sometimes need to be adjusted for your scraping purposes. Some of these methods are:<br><br>
+
+                      - <b>.click</b> — it does what it says. Attach this at the end of any element you want selected or clicked.<br>
+                      - <b>.get</b> — a simple ‘get request’ that will use the WebDriver to call the assigned web page.<br>
+                      - <b>.find_element</b> — an instruction to find a specified element in a path, similar to ‘find’ in Beautiful Soup. All possible elements are posted below.<br>
+                      - <b>.find_elements</b> — an instruction to find all the elements that end in the specified path. This is similar to ‘find_all’ in Beautiful Soup.<br>
+                      - <b>.move_to_element</b> — an attribute of the ActionChains class. This is often used to manipulate the mouse for a certain action, e.g. to engage a drop down menu.<br>
+                      - <b>.execute_script</b> — used to execute JavaScript in a browser. This can handle tasks as simple as scrolling in the window.<br><br>
+                    </p>
+
+                    <h4 class="mb-30">Gathering the Data</h4>
+                    <p class="mb-30">
+                      All of these methods assist you in navigating your page, but you came here for data. All you need is a simple attribute call appended to the end of your code:<br><br>
+                      - <b>.text</b> — add this to the end of an element and the data will be yours.<br><br>
+
+                      <img src="images/selenium_blog/text.png" class="img-responsive" width=800 height=80 alt="text"><br><br>
+
+                      One important thing to consider here, though, ‘.find_elements’ (plural) will provide <b>a list of elements</b>, so merely adding ‘.text’ to the end of your element will be unsuccessful. Like any other Python object, simple list comprehension will address this issue.<br><br>
+                      <img src="images/selenium_blog/list_of_elements.png" class="img-responsive" width=800 height=100 alt="List_of_elements"><br><br>
+
+                    </p>
+                    <h4 class="mb-30">Final Notes</h4>
+                    <p class="mb-30">
+                      Selenium is a handy tool to have in your collection to assist in your web scraping needs, but due to its utilization of the web browser, it can be too cumbersome for simple tasks that can be scraped in seconds. As difficult projects go, though, it is an easy package to deploy in the face of challenging JavaScript and CSS code.<br><br>
+
+                      The Selenium IDE allows you to easily inspect elements of a web page by tracking your interaction with the browser and providing alternate options you can use in your scraping. It also provides the opportunity to easily mimic the login experience, which can overcome authentication issues with certain websites. Finally, the export feature provides a quick and easy way to deploy your code in any script or notebook you choose.<br><br>
+
+                      This is just a brief overview of the capabilities of Selenium. The documentation, found here, provides many other great features that can be employed in your scraping (like saving screenshots).<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                   </div>
                 </div>
               </div>
